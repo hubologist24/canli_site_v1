@@ -82,6 +82,16 @@ const NavBarX = () => {
 
                     {"   "}
 
+
+                    <Link className={cx(classes.link, { [classes.linkActive]: active === "/token" })}
+                        onClick={(event) => {
+                            setActive("/token");
+                        }}
+
+                        to="/token">Tokenlar</Link>
+
+                    {"   "}
+
                     <Link className={cx(classes.link, { [classes.linkActive]: active === "/bilgi" })}
                         onClick={(event) => {
                             setActive("/bilgi");
@@ -93,6 +103,11 @@ const NavBarX = () => {
                         onClick={(event) => {
                             setActive("/about");
                         }} to="/about">Hakkımda</Link>
+                    {"  "}
+                    <Link className={cx(classes.link, { [classes.linkActive]: active === "/donate" })}
+                        onClick={(event) => {
+                            setActive("/donate");
+                        }} to="/donate">Donate</Link>
                 </Nav>
                 <WalletConnect />
             </Container>

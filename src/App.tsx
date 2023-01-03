@@ -8,6 +8,8 @@ import { NavBarX } from "./components/organisms/NavBarX"
 
 import { About } from "./Pages/About"
 import { Bilgi } from "./Pages/Bilgi"
+import { Donate } from "./Pages/Donate"
+import { Token } from "./Pages/Token"
 
 
 
@@ -50,9 +52,11 @@ function App() {
         <NavBarX />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/token" element={<Token />} />
           <Route path="/bilgi" element={<Bilgi />} />
           <Route path="/about" element={<About />} />
           <Route path="/deneme" element={<div>deneme</div>} />
+          <Route path="/donate" element={<Donate />} />
         </Routes>
       </BrowserRouter>
 

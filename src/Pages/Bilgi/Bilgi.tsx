@@ -20,6 +20,11 @@ const Bilgi = () => {
 
     return (
         <Container p="sm">
+            <h3>Token</h3>
+            <li> Token Fabrikasından kendi tokenlarınızı binance chain içinde oluşturabilirsiniz.</li>
+            <li> Token Listesinde oluşturduğunuz tokenları görebilir metamaska import edebilirsiniz</li>
+            <li> Token Listesinden ayrıca girilen miktar kadar tokenınızı ekstra üretebilirsiniz</li>
+            <li> Oluşturduğunuz tokenlarınızı arkadaşlarınıza transfer edebilirsiniz</li>
 
             <h3>Çekiliş Kuralları</h3>
             <li> Çekilişi herkes başlatabilir yada bitirebilir</li>
