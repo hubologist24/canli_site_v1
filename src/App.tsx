@@ -3,7 +3,7 @@ import './App.css'
 import { Container, Footer, useMantineTheme, createStyles } from '@mantine/core';
 
 import { Home } from "./Pages/Home"
-import { Routes, Route, BrowserRouter } from "react-router-dom"
+import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom"
 import { NavBarX } from "./components/organisms/NavBarX"
 
 import { About } from "./Pages/About"
@@ -48,7 +48,10 @@ function App() {
       <div>
 
       </div>
-      <BrowserRouter>
+
+
+
+      <HashRouter>
         <NavBarX />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -58,7 +61,7 @@ function App() {
           <Route path="/deneme" element={<div>deneme</div>} />
           <Route path="/donate" element={<Donate />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
 
 
