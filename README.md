@@ -1,1 +1,1 @@
-# www.eastcha,n.org
+# www.eastchain.org
